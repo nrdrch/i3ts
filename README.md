@@ -4,6 +4,7 @@
 ```
 mkdir ~/Downloads && cd ~/Downloads && git clone https://github.com/nrdrch/i3ts.git && cd i3ts && sudo chmod +x i3ts.sh
 ```
+#### (run without sudo)
 ```
 ./i3ts.sh
 ```
