@@ -12,7 +12,7 @@ mkdir ~/Downloads && cd ~/Downloads && git clone https://github.com/nrdrch/i3ts.
 # what the different options will do: 
 ## base: 
 #### installs: 
-polybar atom picom feh man-db alacritty btop neofetch base-devel fish rofi yay ly
+polybar atom picom feh man-db alacritty btop neofetch base-devel fish rofi yay ly sublime-text-4
 #### sets: 
 fish as your default shell 
 #### sets:
@@ -26,7 +26,7 @@ picom, i3, alacritty & polybar
 ntfs-3g udisks2 btrfs-progs exfatprogs f2fs-tools dosfstools jfsutils cryptsetup lvm2 util-linux nilfs-utils xfsprogs
 ## more apps: 
 #### installs: 
-atom alacritty-themes didyoumean-bin bitwarden-git i3-swallow-git ksnip-git kvm
+alacritty-themes didyoumean-bin bitwarden-git i3-swallow-git ksnip-git kvm
 ## fish alias:
 #### sets:
 various fish alias (see fishalias.sh)
