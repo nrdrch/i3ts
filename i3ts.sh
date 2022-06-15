@@ -97,7 +97,9 @@ select fav in "${options[@]}"; do
 	    yay -S --noconfirm --needed bitwarden-git
 	    yay -S --noconfirm --needed i3-swallow-git
 	    yay -S --noconfirm --needed ksnip-git
-	    
+	    yay -S --noconfirm apm
+	    yay -S --noconfirm electron11
+	    yay -S --noconfirm ripgrep
             clear
 	    cd ~/Applications
 	    git clone https://aur.archlinux.org/atom.git
