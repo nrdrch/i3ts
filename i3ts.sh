@@ -31,7 +31,13 @@ select fav in "${options[@]}"; do
 	    sudo chmod +x setup.sh
 	    ./setup.sh
       	    clear
-
+	    cd $HOME/Applications	    
+	    git clone https://aur.archlinux.org/sublime-text-4.git
+	    cd sublime-text-4/
+	    makepkg -si
+	    
+	    
+	    
             sudo rm -r -d ~/.config/i3/config
             sudo mv ~/Downloads/i3ts/cfg/config ~/.config/i3/config
             sudo mv ~/Downloads/i3ts/cfg/config.ini ~/.config/polybar/config.ini
@@ -101,10 +107,6 @@ select fav in "${options[@]}"; do
 	    yay -S --noconfirm electron11
 	    yay -S --noconfirm ripgrep
             clear
-	    cd ~/Applications
-	    git clone https://aur.archlinux.org/atom.git
-	    cd atom
-	    makepkg -si
 	    echo "the mildly useful and totally unbiased:"
 	    cat $HOME/Downloads/i3ts/necessary.txt
 
