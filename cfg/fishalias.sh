@@ -5,6 +5,7 @@ alias --save c="clear"
 alias --save e="exit"
 alias --save ed="sudo atom --no-sandbox"
 alias --save oprm="sudo rm -r -d"
+alias --save nf="neofetch"
 
 
 #Power & System commands
