@@ -17,13 +17,13 @@ select fav in "${options[@]}"; do
             sudo touch $HOME/Downloads/i3ts/tog.txt
             sudo chmod 777 $HOME/Downloads/i3ts/log.txt
             clear
-            sudo pacman -S --needed --noconfirm polybar atom picom feh man-db alacritty btop neofetch base-devel fish mpv
+            sudo pacman -S --needed --noconfirm polybar picom feh man-db alacritty btop neofetch base-devel fish mpv
             sudo chsh -s /usr/bin/fish $(whoami)
             cd $HOME/Applications
             git clone https://aur.archlinux.org/yay-bin.git
             sudo chmod 777 yay-bin && cd yay-bin && makepkg -si --noconfirm --noprogressbar
             cd $HOME/Applications
-            yay -S --noconfirm --needed --quiet rofi
+            yay -S --noconfirm --needed --quiet rofi atom
 	    clear
  	    git clone --depth=1 https://github.com/adi1090x/rofi.git
 	    cd rofi
