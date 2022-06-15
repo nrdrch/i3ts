@@ -3,7 +3,7 @@
 #general
 alias --save c="clear"
 alias --save e="exit"
-alias --save ed="sudo atom --no-sandbox"
+alias --save ed="sudo subl"
 alias --save oprm="sudo rm -r -d"
 alias --save nf="neofetch"
 
@@ -40,12 +40,12 @@ alias --save gh="swallow firefox https://github.com/"
 
 
 #Configuration
-alias --save i3cfg="sudo atom --no-sandbox ~/.config/i3/config"
-alias --save picomcfg="sudo atom --no-sandbox ~/.config/picom/config"
-alias --save polybarcfg="sudo atom --no-sandbox ~/.config/polybar/config.ini"
-alias --save grubcfg="sudo atom --no-sandbox /etc/default/grub"
-alias --save alacrittycfg="sudo atom --no-sandbox ~/.config/alacritty/alacritty.yml"
-alias --save btopcfg="sudo atom --no-sandbox ~/.config/btop/btop.conf"
+alias --save i3cfg="sudo subl ~/.config/i3/config"
+alias --save picomcfg="sudo subl ~/.config/picom/config"
+alias --save polybarcfg="sudo subl ~/.config/polybar/config.ini"
+alias --save grubcfg="sudo subl /etc/default/grub"
+alias --save alacrittycfg="sudo subl ~/.config/alacritty/alacritty.yml"
+alias --save btopcfg="sudo subl ~/.config/btop/btop.conf"
 alias --save roficfg="cd ~/.config/rofi/"
 
 echo "4) fish alias" >> ~/Downloads/i3ts/log.txt
