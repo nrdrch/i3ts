@@ -5,7 +5,7 @@ cat $HOME/Downloads/i3ts/necessary.txt
 sleep 2s
 
 PS3='Choose an option: '
-options=("base" "fsdeps" "more apps" "fish alias" "grub config" "Quit")
+options=("base" "fsdeps" "more apps" "fish alias" "grub utils" "Quit")
 select fav in "${options[@]}"; do
     case $fav in
         "base")
@@ -66,7 +66,7 @@ select fav in "${options[@]}"; do
 	    echo "2) fsdeps "
 	    echo "3) more apps"
 	    echo "4) fish alias"
-	    echo "5) grub config"
+	    echo "5) grub utils"
 	    echo "6) Quit"
 	    echo " "
 	    echo " "
@@ -88,7 +88,7 @@ select fav in "${options[@]}"; do
 	    echo "2) fsdeps "
 	    echo "3) more apps"
 	    echo "4) fish alias"
-	    echo "5) grub config"
+	    echo "5) grub utils"
 	    echo "6) Quit"
 	    echo " "
 	    echo " "
@@ -111,7 +111,7 @@ select fav in "${options[@]}"; do
 	    echo "2) fsdeps "
 	    echo "3) more apps"
 	    echo "4) fish alias"
-	    echo "5) grub config"
+	    echo "5) grub utils"
 	    echo "6) Quit"
 	    echo " "
 	    echo " "
@@ -133,7 +133,7 @@ select fav in "${options[@]}"; do
 	    echo "2) fsdeps "
 	    echo "3) more apps"
 	    echo "4) fish alias"
-	    echo "5) grub config"
+	    echo "5) grub utils"
 	    echo "6) Quit"
 	    echo " "
 	    echo " "
@@ -142,18 +142,11 @@ select fav in "${options[@]}"; do
 	    echo "4) fish alias" >> ~/Downloads/i3ts/log.txt
 	    cat ~/Downloads/i3ts/log.txt
             ;;
-        "grub config")
+        "grub utils")
             sudo pacman -S --noconfirm os-prober
+	    sudo pacman -S --noconfirm grub-customizer
 	    sudo os-prober
-	    clear
-            sed 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=1/g' /etc/default/grub
-            sed 's/#GRUB_DISABLE_SUBMENU=y/GRUB_DISABLE_SUBMENU=y/g' /etc/default/grub
-	    
-	    sed 's/#GRUB_DISABLE_OS_PROBER=false/GRUB_DISABLE_OS_PROBER=false/g' /etc/default/grub
-            clear
-            
-            sudo grub-mkconfig -o /boot/grub/grub.cfg
-            clear
+
 	    echo "the mildly useful and totally unbiased:"
 	    cat $HOME/Downloads/i3ts/necessary.txt
 
@@ -162,12 +155,12 @@ select fav in "${options[@]}"; do
 	    echo "2) fsdeps "
 	    echo "3) more apps"
 	    echo "4) fish alias"
-	    echo "5) grub config"
+	    echo "5) grub utils"
 	    echo "6) Quit"
 	    echo " "
 	    echo " "
-	    echo ">last chosen option: 5) grub config"
-	    echo "5) grub config" >> ~/Downloads/i3ts/log.txt
+	    echo ">last chosen option: 5) grub utils"
+	    echo "5) grub utils" >> ~/Downloads/i3ts/log.txt
 	    cat ~/Downloads/i3ts/log.txt
             ;;
         "Quit")
