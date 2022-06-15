@@ -137,8 +137,10 @@ select fav in "${options[@]}"; do
             sudo pacman -S --noconfirm os-prober
 	    sudo os-prober
 	    clear
-            sudo rm -r -d /etc/default/grub
-            sudo mv ~/Downloads/i3ts/grub /etc/default/grub
+            sed 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=1/g' /etc/default/grub
+            sed 's/#GRUB_DISABLE_SUBMENU=y/GRUB_DISABLE_SUBMENU=y/g' /etc/default/grub
+	    GRUB_DISABLE_OS_PROBER=false
+	    sed 's/#GRUB_DISABLE_OS_PROBER=false/GRUB_DISABLE_OS_PROBER=false/g' /etc/default/grub
             clear
             sleep 0.2s
             sudo grub-mkconfig -o /boot/grub/grub.cfg
