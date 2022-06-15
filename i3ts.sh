@@ -62,6 +62,8 @@ select fav in "${options[@]}"; do
 	    echo "4) fish alias"
 	    echo "5) grub config"
 	    echo "6) Quit"
+	    echo " "
+	    echo " "
 	    echo ">last chosen option: 1) base"
 	    echo "Options used to far:" >> ~/Downloads/i3ts/log.txt
 	    echo "1) base" >> ~/Downloads/i3ts/log.txt
@@ -82,6 +84,8 @@ select fav in "${options[@]}"; do
 	    echo "4) fish alias"
 	    echo "5) grub config"
 	    echo "6) Quit"
+	    echo " "
+	    echo " "
 	    echo ">last chosen option: 2) fsdeps"
 	    echo "2) fsdeps" >> ~/Downloads/i3ts/log.txt
 	    cat ~/Downloads/i3ts/log.txt
@@ -108,6 +112,8 @@ select fav in "${options[@]}"; do
 	    echo "4) fish alias"
 	    echo "5) grub config"
 	    echo "6) Quit"
+	    echo " "
+	    echo " "
       	    echo ">last chosen option: 3) have more"
 	    echo "3) more apps" >> ~/Downloads/i3ts/log.txt
 	    cat ~/Downloads/i3ts/log.txt
@@ -128,6 +134,8 @@ select fav in "${options[@]}"; do
 	    echo "4) fish alias"
 	    echo "5) grub config"
 	    echo "6) Quit"
+	    echo " "
+	    echo " "
       	    echo ">last chosen option 4) fish alias"
 
 	    echo "4) fish alias" >> ~/Downloads/i3ts/log.txt
@@ -139,10 +147,10 @@ select fav in "${options[@]}"; do
 	    clear
             sed 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=1/g' /etc/default/grub
             sed 's/#GRUB_DISABLE_SUBMENU=y/GRUB_DISABLE_SUBMENU=y/g' /etc/default/grub
-	    GRUB_DISABLE_OS_PROBER=false
+	    
 	    sed 's/#GRUB_DISABLE_OS_PROBER=false/GRUB_DISABLE_OS_PROBER=false/g' /etc/default/grub
             clear
-            sleep 0.2s
+            
             sudo grub-mkconfig -o /boot/grub/grub.cfg
             clear
 	    echo "the mildly useful and totally unbiased:"
@@ -155,6 +163,8 @@ select fav in "${options[@]}"; do
 	    echo "4) fish alias"
 	    echo "5) grub config"
 	    echo "6) Quit"
+	    echo " "
+	    echo " "
 	    echo ">last chosen option: 5) grub config"
 	    echo "5) grub config" >> ~/Downloads/i3ts/log.txt
 	    cat ~/Downloads/i3ts/log.txt
