@@ -35,7 +35,6 @@ some functions only work with firefox, atom & i3-swallow-git installed (mostly i
 ## grub config:)
 #### installs:
 os-prober
-#### configures:
-grub config with os prober enabled for those of you using multiple operating systems
+grub-customizer
 ## Quit:
 #### exits the utility
