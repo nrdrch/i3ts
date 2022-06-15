@@ -26,7 +26,7 @@ picom, i3, alacritty & polybar
 ntfs-3g udisks2 btrfs-progs exfatprogs f2fs-tools dosfstools jfsutils cryptsetup lvm2 util-linux nilfs-utils xfsprogs
 ## more apps: 
 #### installs: 
-alacritty-themes didyoumean-bin bitwarden-git i3-swallow-git ksnip-git kvm
+didyoumean-bin bitwarden-git i3-swallow-git ksnip-git
 ## fish alias:
 #### sets:
 various fish alias (see fishalias.sh)
