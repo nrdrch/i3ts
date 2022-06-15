@@ -98,14 +98,11 @@ select fav in "${options[@]}"; do
 
 	          ;;
         "more apps")
-            yay -S --noconfirm --needed alacritty-themes
+            
 	    yay -S --noconfirm --needed didyoumean-bin
 	    yay -S --noconfirm --needed bitwarden-git
 	    yay -S --noconfirm --needed i3-swallow-git
 	    yay -S --noconfirm --needed ksnip-git
-	    yay -S --noconfirm apm
-	    yay -S --noconfirm electron11
-	    yay -S --noconfirm ripgrep
             clear
 	    echo "the mildly useful and totally unbiased:"
 	    cat $HOME/Downloads/i3ts/necessary.txt
