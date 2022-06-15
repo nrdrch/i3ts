@@ -93,8 +93,12 @@ select fav in "${options[@]}"; do
 	    yay -S --noconfirm --needed bitwarden-git
 	    yay -S --noconfirm --needed i3-swallow-git
 	    yay -S --noconfirm --needed ksnip-git
-	    yay -S --noconfirm atom
+	    
             clear
+	    cd ~/Applications
+	    git clone https://aur.archlinux.org/atom.git
+	    cd atom
+	    makepkg -si
 	    echo "the mildly useful and totally unbiased:"
 	    cat $HOME/Downloads/i3ts/necessary.txt
 
