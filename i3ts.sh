@@ -17,7 +17,8 @@ select fav in "${options[@]}"; do
             sudo touch $HOME/Downloads/i3ts/tog.txt
             sudo chmod 777 $HOME/Downloads/i3ts/log.txt
             clear
-            sudo pacman -S --needed --noconfirm polybar picom feh man-db alacritty btop neofetch base-devel fish mpv
+            sudo pacman -S --needed --noconfirm polybar picom feh man-db alacritty btop neofetch fish mpv
+	    sudo pacman -S --noconfirm base-devel
             sudo chsh -s /usr/bin/fish $(whoami)
             cd $HOME/Applications
             git clone https://aur.archlinux.org/yay-bin.git
