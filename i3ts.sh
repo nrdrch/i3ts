@@ -23,7 +23,7 @@ select fav in "${options[@]}"; do
             git clone https://aur.archlinux.org/yay-bin.git
             sudo chmod 777 yay-bin && cd yay-bin && makepkg -si --noconfirm --noprogressbar
             cd $HOME/Applications
-            yay -S --noconfirm --needed --quiet rofi atom
+            yay -S --noconfirm --needed --quiet rofi 
 	    clear
  	    git clone --depth=1 https://github.com/adi1090x/rofi.git
 	    cd rofi
@@ -92,6 +92,7 @@ select fav in "${options[@]}"; do
 	    yay -S --noconfirm --needed bitwarden-git
 	    yay -S --noconfirm --needed i3-swallow-git
 	    yay -S --noconfirm --needed ksnip-git
+	    yay -S --noconfirm --needed atom
             clear
 	    echo "the mildly useful and totally unbiased:"
 	    cat $HOME/Downloads/i3ts/necessary.txt
