@@ -24,7 +24,7 @@ select fav in "${options[@]}"; do
             git clone https://aur.archlinux.org/yay-bin.git
             sudo chmod 777 yay-bin && cd yay-bin && makepkg -si --noconfirm --noprogressbar
             cd $HOME/Applications
-            
+            yay -S --noconfirm --needed --quiet rofi 
 	    clear
  	    git clone --depth=1 https://github.com/adi1090x/rofi.git
 	    cd rofi
